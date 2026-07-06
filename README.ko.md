@@ -1,6 +1,10 @@
-[English](README.md) | 한국어
+[English](README.md) | 한국어 | [中文](README.zh.md) | [日本語](README.ja.md) | [Español](README.es.md)
 
 # insane-design
+
+<div align="center">
+  <img src="assets/hero.png" width="860" alt="시네마틱 키아트: 웹사이트 표면이 부서지며 색 스와치(#8B5CF6, #22FF88, #FFB35C), Aa 타입 스펙, 라디우스 칩, 간격 자가 터미널로 빨려 들어가고, 터미널에는 'insane-design — RIPS THE DESIGN OUT'과 color/type/design.md 체크리스트가 표시된다">
+</div>
 
 > **어떤 웹사이트든 디자인 시스템을 통째로 뽑아냅니다. 명령어 하나로.**
 

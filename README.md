@@ -1,6 +1,10 @@
-English | [한국어](README.ko.md)
+English | [한국어](README.ko.md) | [中文](README.zh.md) | [日本語](README.ja.md) | [Español](README.es.md)
 
 # insane-design
+
+<div align="center">
+  <img src="assets/hero.png" width="860" alt="Cinematic key-art: a website's surface shatters as color swatches (#8B5CF6, #22FF88, #FFB35C), an Aa type specimen, a radius chip and a spacing ruler are pulled into a terminal reading 'insane-design — RIPS THE DESIGN OUT' with color/type/design.md checklist">
+</div>
 
 > **Rips the design system out of any website. In one command.**
 
