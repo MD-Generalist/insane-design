@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.5.4 — 2026-07-23
+
+Fixed — var() 브랜드 복구 부활 + Tier-4 출력 경로 (검증 리서치 후속).
+
+- `brand_candidates.py`가 `var_resolver.py`의 실제 출력 형식(`samples: {name: {raw,resolved,chain}}`)을 소비하지 못해 var()-체인 브랜드 복구가 한 번도 동작하지 않던 결함 수정(선적 ferrari 예제 `semantic_vars: []`의 원인). 레거시 2형식(tokens 리스트·플랫 dict)도 계속 지원. 알려진 한계: var_resolver가 samples를 상위 50개로 캡하므로 var가 많은 사이트에선 부분 복구.
+- `SKILL.md` Tier-4(curl_cffi)의 quoted heredoc이 `$OUT` 확장을 막아 산출물이 리터럴 `$OUT` 파일로 빠지고 Tier-4가 조용히 무기여하던 결함 수정 — 출력 경로를 argv로 전달.
+- `typo_extractor.py`의 stripe 전용 하드코드 assert(프로덕션 경로 잔류) 제거.
+- v0.5.3 이후 쌓여 있던 문서 커밋(ja/zh/es README + 히어로 이미지)이 이 릴리즈에 함께 포함된다.
+
+## 0.5.3 — 2026-07-08 (기록 보충)
+
+- 결정론적 첫-실행 셋업 프롬프트(setup.sh ask 모드), 라이선스 표기 정리(MIT + DISCLAIMER.md 체계). 릴리즈 당시 CHANGELOG 누락 — 2026-07-23 보충.
+
 ## 0.5.2 — 2026-06-21
 
 - The GitHub-star prompt is shown in the user's current language; on a fresh session with no language signal yet, it falls back to the language detected from your recent Claude sessions (else English).

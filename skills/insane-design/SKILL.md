@@ -187,11 +187,11 @@ fi
 # Tier 4: curl_cffi TLS 임퍼소네이션 (Phase 2 에스컬레이션)
 if ! html_ok "$OUT"; then
   python3 -c "import curl_cffi" 2>/dev/null || pip install curl_cffi -q
-  python3 - <<'PYEOF'
+  python3 - "$OUT" <<'PYEOF'
 from curl_cffi import requests as cffi_req
 import sys
 url = "{url}"
-out = "$OUT"
+out = sys.argv[1]
 for target in ["safari", "chrome", "firefox"]:
     try:
         r = cffi_req.get(url, impersonate=target, timeout=20,
