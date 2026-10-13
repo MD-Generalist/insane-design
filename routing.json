@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "skill": "insane-design:insane-design",
+      "when": "URL에서 디자인 시스템을 추출하거나 design.md를 적용·빌드할 때",
+      "priority": 30,
+      "keywords": [
+        "디자인 시스템",
+        "design.md",
+        "디자인 분석",
+        "디자인 추출",
+        "디자인 따",
+        "디자인 토큰",
+        "스타일 추출",
+        "design system"
+      ],
+      "exclude": [
+        "변수명",
+        "색상 변수"
+      ]
+    }
+  ]
+}
